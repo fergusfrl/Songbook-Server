@@ -1,0 +1,26 @@
+{
+  "name": "songbook_gql_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --exec 'babel-node src/server'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Fergus Farrell",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.3.1",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "graphql": "^14.1.1",
+    "mongoose": "^5.4.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.9"
+  }
+}
