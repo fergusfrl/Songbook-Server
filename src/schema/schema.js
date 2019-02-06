@@ -9,7 +9,7 @@ export const typeDefs = gql`
         title: String!
         artist: String
         album: String
-        tags: String
+        tags: [String]
         lyrics: String!
         chords: String
     }
@@ -20,11 +20,11 @@ export const typeDefs = gql`
     }
 
     input SongInput {
-        title: String
+        title: String!
         artist: String
         album: String
-        tags: String
-        lyrics: String
+        tags: [String]
+        lyrics: String!
         chords: String
     }
 
