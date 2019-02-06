@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import { ApolloServer } from 'apollo-server-express';
+import compression from 'compression';
 import cors from 'cors';
 
 import { resolvers, typeDefs } from './schema/schema';
@@ -10,6 +11,7 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+app.use(compression());
 app.use(cors());
 
 // Connect to MLab MongoDB
