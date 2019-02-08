@@ -8,7 +8,8 @@ const songSchema = new Schema({
     album: { type: String },
     tags: { type: [String] },
     lyrics: { type: String, required: true },
-    chords: { type: String }
+    chords: { type: String },
+    hasChords: { type: Boolean, required: true }
 });
 
 export default mongoose.model('song', songSchema);

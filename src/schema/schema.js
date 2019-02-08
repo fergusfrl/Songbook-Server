@@ -12,6 +12,7 @@ export const typeDefs = gql`
         tags: [String]
         lyrics: String!
         chords: String
+        hasChords: Boolean!
     }
 
     type Query {
@@ -26,6 +27,7 @@ export const typeDefs = gql`
         tags: [String]
         lyrics: String!
         chords: String
+        hasChords: Boolean!
     }
 
     type Mutation {
